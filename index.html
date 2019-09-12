@@ -1,1 +1,58 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>The Frog Problem</title><link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" href="/src.31dc7ae8.css"><script src="/src.48a6071b.js"></script></head><body> <div class="content_wrapper"> <h1>The Frog Problem</h1> <p> This page is based on a <a href="https://youtu.be/ZLTyX4zL2Fc">video by Matt Parker</a>. If you want to know what this is all about, then I recommend you check it out first and then come back. </p> <p> This is not a proof. I was never good at proving solutions to problems. The comments of the video contain multiple proofs that are all better than what I could come up with. But I'm a programmer, so I made a program that simulates the "game" and spits out some numbers. </p> <p> The output is in CSV format. Every line consists of the number of pads, a comma and the average amount of jumps needed to get to the other side of the pond. You should be able to take the contents of the text box and paste them right into your favorite spreadsheet application! </p> <div class="settings"> <div> <label for="numberOfGames">Number of games</label> <input id="numberOfGames" type="number" value="1000"> </div> <div> <label for="minNumberOfPads">Minimum number of pads</label> <input id="minNumberOfPads" type="number" value="1"> </div> <div> <label for="maxNumberOfPads">Maximum number of pads</label> <input id="maxNumberOfPads" type="number" value="100"> </div> <div> <label for="numberOfThreads">Number of threads</label> <input id="numberOfThreads" type="number" value="4"> </div> <div> <button id="run">Run!</button> </div> </div> <textarea id="output" class="output"></textarea> </div> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Frog Problem</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src.31dc7ae8.css" />
+    <script src="src.f93b5ecb.js"></script>
+  </head>
+  <body>
+    <div class="content_wrapper">
+      <h1>The Frog Problem</h1>
+      <p>
+        This page is based on a
+        <a href="https://youtu.be/ZLTyX4zL2Fc">video by Matt Parker</a>. If you
+        want to know what this is all about, then I recommend you check it out
+        first and then come back.
+      </p>
+      <p>
+        This is not a proof. I was never good at proving solutions to problems.
+        The comments of the video contain multiple proofs that are all better
+        than what I could come up with. But I'm a programmer, so I made a
+        program that simulates the "game" and spits out some numbers.
+      </p>
+      <p>
+        The output is in CSV format. Every line consists of the number of pads,
+        a comma and the average amount of jumps needed to get to the other side
+        of the pond. You should be able to take the contents of the text box and
+        paste them right into your favorite spreadsheet application!
+      </p>
+      <div class="settings">
+        <div>
+          <label for="numberOfGames">Number of games</label>
+          <input id="numberOfGames" type="number" value="1000" />
+        </div>
+        <div>
+          <label for="minNumberOfPads">Minimum number of pads</label>
+          <input id="minNumberOfPads" type="number" value="1" />
+        </div>
+        <div>
+          <label for="maxNumberOfPads">Maximum number of pads</label>
+          <input id="maxNumberOfPads" type="number" value="100" />
+        </div>
+        <div>
+          <label for="numberOfThreads">Number of threads</label>
+          <input id="numberOfThreads" type="number" value="4" />
+        </div>
+        <div><button id="run">Run!</button></div>
+      </div>
+      <textarea id="output" class="output"></textarea>
+    </div>
+  </body>
+</html>
