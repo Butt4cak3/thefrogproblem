@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "build": "parcel build -d dist/ src/index.html",
-    "serve": "parcel serve -d dist/ src/index.html"
+    "build": "parcel build --dist-dir dist/ src/index.html",
+    "serve": "parcel serve --dist-dir dist/ src/index.html"
   },
   "devDependencies": {
-    "parcel": "^1.12.3",
+    "parcel": "^2.0.0-beta.1",
     "parcel-plugin-clean-dist": "^0.0.6"
   },
   "browserslist": "last 2 chrome versions"
